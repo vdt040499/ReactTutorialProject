@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "First article",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, in, eligendi dolor rerum perspiciatis soluta vel cum voluptatem blanditiis magni earum adipisci eveniet laudantium accusantium obcaecati natus debitis quidem eius.",
+        "img": "https://www.tom-archer.com/wp-content/uploads/2018/10/zermatt-matterhorn-best-view-1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Second article",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, in, eligendi dolor rerum perspiciatis soluta vel cum voluptatem blanditiis magni earum adipisci eveniet laudantium accusantium obcaecati natus debitis quidem eius.",
+        "img": "https://www.tom-archer.com/wp-content/uploads/2018/11/zermatt-matterhorn-best-view-6.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Third article",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, in, eligendi dolor rerum perspiciatis soluta vel cum voluptatem blanditiis magni earum adipisci eveniet laudantium accusantium obcaecati natus debitis quidem eius.",
+        "img": "https://www.tom-archer.com/wp-content/uploads/2018/11/zermatt-matterhorn-best-view-10.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Fourth article",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, in, eligendi dolor rerum perspiciatis soluta vel cum voluptatem blanditiis magni earum adipisci eveniet laudantium accusantium obcaecati natus debitis quidem eius.",
+        "img": "https://www.tom-archer.com/wp-content/uploads/2018/11/zermatt-matterhorn-best-view-13.jpg"
+    }
+]
