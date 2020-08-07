@@ -12,7 +12,7 @@ class Article extends Component {
     
       str = str.toLowerCase()
             .trim()
-            .replace(/[^a-z0-9\-]/g, '-')
+            .replace(/[^a-z0-9 -]/g, '-')
             .replace(/-+/g, '-');
     
       return str;
@@ -26,7 +26,7 @@ class Article extends Component {
         <div className="row justify-content-center no-gutters mt-5 mb-lg-0">
           <div className="col-lg-6">
             <Link to={"/article/" + slug + "." + id + ".html"}>
-              <img className="img-fluid" src={img} alt />
+              <img className="img-fluid" src={img} alt="article_image" />
             </Link>
           </div>
           <div className="col-lg-6">

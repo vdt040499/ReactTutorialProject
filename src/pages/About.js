@@ -15,7 +15,7 @@ export default function About() {
                     
                 </div>
                 </div>
-                <img className="img-fluid" src="/img/ipad.png" alt />
+                <img className="img-fluid" src="/img/ipad.png" alt="about_image" />
             </div>
         </section>
     );
