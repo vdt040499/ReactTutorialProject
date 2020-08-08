@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { Redirect } from "react-router-dom"
+import { Redirect } from "react-router-dom";
 
 export default function Contact() {
-
   const [state, setState] = useState({
-    email: ""
+    email: "",
+    status: "Buồn Cười"
   });
-  const [isRedirect, setRedirect] = useState(false)
+  const [isRedirect, setRedirect] = useState(false);
 
   const submitForm = (event) => {
     event.preventDefault();
     setRedirect(!isRedirect);
     getValue();
-  }
+  };
 
   const isChange = (event) => {
     const name = event.target.name;
@@ -20,16 +20,16 @@ export default function Contact() {
 
     setState({
       ...state,
-      [name]: value
+      [name]: value,
     });
-  }
+  };
 
   const getValue = () => {
-    let content = `Thông tin email vừa nhập là: ${state.email}`
+    let content = `Bạn vừa cung cấp email ${state.email} cho chúng tôi với một tâm thế hết sức ${state.status}`;
     alert(content);
-  }
+  };
 
-  if(isRedirect) {
+  if (isRedirect) {
     return <Redirect to="/" />;
   }
 
@@ -42,15 +42,31 @@ export default function Contact() {
               <i className="far fa-paper-plane fa-2x mb-2 text-white" />
               <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
               <form className="form-inline d-flex">
-                <input
-                  className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
-                  id="inputEmail"
-                  type="email"
-                  name="email"
-                  onChange={(event) => isChange(event)}
-                  placeholder="Enter email address..."
-                />
-                <button onClick={(event) => submitForm(event)} className="btn btn-primary mx-auto" type="submit">
+                <div className="control-group col-md-6">
+                  <input
+                    className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
+                    id="inputEmail"
+                    type="email"
+                    name="email"
+                    onChange={(event) => isChange(event)}
+                    placeholder="Enter email address..."
+                  />
+                </div>
+                <div className="control-group col-md-3">
+                  <div className="form-group">
+                    <label className="mr-5 p-0" for="status"><b>Status</b></label>
+                    <select className="form-control" name="status" id="status" value={state.status} onChange={(event) => isChange(event)}>
+                      <option value="Vui Vẻ">Vui Vẻ</option>
+                      <option value="Buồn Cười">Buồn Cười</option>
+                      <option value="Phẫn Nộ">Phẫn Nộ</option>
+                    </select>
+                  </div>
+                </div>
+                <button
+                  onClick={(event) => submitForm(event)}
+                  className="btn btn-primary mx-auto"
+                  type="submit"
+                >
                   Subscribe
                 </button>
               </form>
